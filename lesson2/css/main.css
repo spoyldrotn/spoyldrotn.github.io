@@ -1,0 +1,63 @@
+body {
+  font-size: 16px;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive, 'Montserrat', Arial, sans-serif;
+  margin: .25rem;
+  color: #d2cec4;
+}
+
+h2 {
+  color: #3d321e;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+header,
+main,
+footer {
+  margin: 1rem auto;
+  padding: .5rem;
+  max-width: 480px;
+}
+
+header,
+footer {
+  background-color: #3d321e ;
+  color: #fff;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px
+}
+
+.rightalign {
+  float: right;
+  width: 150px;
+  height: auto;
+  box-shadow: 0 0 30px #89867e;
+}
+
+.caption {
+  font-size: smaller;
+  color: #89867e;
+}
+
+hr {
+  color: #3d321e;
+  width: 60%; 
+  text-align: right; 
+  margin-right: 0;
+}
