@@ -1,7 +1,14 @@
 body {
 	font-size: 16px;
-	font-family: "Sansita", Arial, sans-serif;
+    font-family: "Sansita", Arial, sans-serif;
 }
+
+header,footer {
+  background-color: #3d321e ;
+  color: #536878;
+  border-radius: 10px;
+}
+
 /* phone or baseline views **************************/
 main {
 	max-width: 767px;
@@ -20,9 +27,10 @@ main {
 
 main section {
 	margin: 0.5rem;
-	border: 1px solid #bbb;
+	border: 1px solid #D2cec4;
 	padding: 0 1rem;
-	background-color: #eee;
+    background-color: #D2cec4;
+    border-radius: 10px
 }
 section:nth-child(2) {
 	display: none;
