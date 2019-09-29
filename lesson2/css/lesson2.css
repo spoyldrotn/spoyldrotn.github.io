@@ -1,12 +1,15 @@
 body {
 	font-size: 16px;
     font-family: "Sansita", Arial, sans-serif;
+    color: #536878
 }
 
 header,footer {
   background-color: #3d321e ;
   color: #536878;
   border-radius: 10px;
+  max-width: 767px;
+  text-align: center;
 }
 
 /* phone or baseline views **************************/
