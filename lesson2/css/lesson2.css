@@ -12,14 +12,25 @@ header,footer {
   text-align: center;
 }
 
+section h2 {
+    background-color: #3d321e;
+    color: #536878;
+    position: relative;
+    top: -20px;
+    padding: 10px 15px 10px;
+	border-radius: 10px;
+	text-align: center;
+}
+
 /* phone or baseline views **************************/
 main {
 	max-width: 767px;
 	margin: 0 auto;
 }
-h2 {
+h2, h3 {
     color: #536878;
-    font-family: 'Dancing Script', Arial, sans-serif;
+	font-family: 'Dancing Script', Arial, sans-serif;
+	text-align: center;
 }
 
 main {
