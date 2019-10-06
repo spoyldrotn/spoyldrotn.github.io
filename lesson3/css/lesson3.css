@@ -1,7 +1,7 @@
 body {
 	font-size: 16px;
     font-family: "Sansita", Arial, sans-serif;
-    color: #536878
+	color: #536878
 }
 
 header,footer {
@@ -20,6 +20,10 @@ section h2 {
     padding: 10px 15px 10px;
 	border-radius: 10px;
 	text-align: center;
+}
+
+nav {
+	display: block;
 }
 
 /* phone or baseline views **************************/

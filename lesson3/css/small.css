@@ -7,7 +7,7 @@ h1 {
   font-family: 'Dancing Script', cursive, 'Montserrat', Arial, sans-serif;
   margin: .25rem;
   color: #d2cec4;
-  font-size: 1rem:
+  font-size: 1rem;
 }
 
 h2 {
@@ -40,7 +40,7 @@ footer a {
 
 img {
   width: 100%;
-  border-radius: 10px
+  border-radius: 10px;
 }
 
 .rightalign {

@@ -18,10 +18,9 @@ header, footer {
 }
 
 img {
-    width: 200 px
+    width: 200 px;
     height: auto;
     border-radius: 10px;
-    float: right;
   }
 
 }
