@@ -1,12 +1,12 @@
 body {
 	font-size: 16px;
     font-family: "Sansita", Arial, sans-serif;
-    color: #536878
+    color: #a9c7df
 }
 
 header,footer {
   background-color: #3d321e ;
-  color: #536878;
+  color: #a9c7df;
   border-radius: 10px;
   max-width: 767px;
   text-align: center;
@@ -14,7 +14,7 @@ header,footer {
 
 section h2 {
     background-color: #3d321e;
-    color: #536878;
+    color: #a9c7df;
     position: relative;
     top: -20px;
     padding: 10px 15px 10px;
@@ -28,7 +28,7 @@ main {
 	margin: 0 auto;
 }
 h2, h3 {
-    color: #536878;
+    color: #a9c7df;
 	font-family: 'Dancing Script', Arial, sans-serif;
 	text-align: center;
 }
