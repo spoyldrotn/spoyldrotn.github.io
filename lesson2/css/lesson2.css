@@ -1,7 +1,7 @@
 body {
 	font-size: 16px;
     font-family: "Sansita", Arial, sans-serif;
-    color: #a9c7df
+    color: #3d321e
 }
 
 header,footer {
@@ -27,8 +27,14 @@ main {
 	max-width: 767px;
 	margin: 0 auto;
 }
-h2, h3 {
+h2 {
     color: #a9c7df;
+	font-family: 'Dancing Script', Arial, sans-serif;
+	text-align: center;
+}
+
+h3 {
+    color: #3d321e;
 	font-family: 'Dancing Script', Arial, sans-serif;
 	text-align: center;
 }
