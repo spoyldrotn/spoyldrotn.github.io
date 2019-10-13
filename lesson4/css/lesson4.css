@@ -48,10 +48,14 @@ nav ul {
     overflow: hidden;
     display: flex; 
     border-radius: 10px;
+    text-align: center;
+    justify-content: space-evenly;
+
 }
 
 nav ul li { 
     flex: 1 1 100%; 
+    list-style-type: none;
 }
 
 nav {
@@ -63,7 +67,13 @@ nav {
     box-shadow: 0 2px 15px #19495b;
     border-radius: 10px;
 }
-
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #3d321e;
+}
 
 nav li a {
 	display: block;
@@ -73,7 +83,6 @@ nav li a {
 	text-decoration: none;
 	font-size: 0.95rem;
 }
-
 
 .m {
 	font-style: italic;
@@ -168,6 +177,11 @@ nav a:hover {
             display: flex;
             flex-direction: row;
         }
+
+    nav ul {
+        display: flex; 
+        flex-direction: row;
+
 @media only screen and (min-width: 37.5em) {
     nav ul { 
             display: grid;

@@ -1,0 +1,62 @@
+body {
+  font-size: 16px;
+}
+
+h1 {
+  margin: .25rem;
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: .75rem;
+  font-style: italic;
+}
+
+header,
+main,
+footer {
+  margin: 1rem auto;
+  padding: .5rem;
+  max-width: 480px;
+}
+
+
+
+footer {
+  text-align: center;
+}
+
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.rightalign {
+  float: right;
+  width: 150px;
+  height: auto;
+  box-shadow: 0 0 30px #89867e;
+}
+
+.caption {
+  font-size: smaller;
+}
+
+hr {
+   width: 60%; 
+  text-align: right; 
+  margin-right: 0;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    overflow: hidden;
+    display: flex; 
+    border-radius: 10px;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}

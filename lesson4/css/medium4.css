@@ -1,21 +1,12 @@
 @media only screen and (min-width: 32.5em){
     h1 {
-        font-family: 'Dancing Script', cursive, 'Montserrat', Arial, sans-serif;
         margin: .25rem;
-        color: #d2cec4; 
         font-size: 2rem;
     }
 h2 {
-    color: #3d321e;
     font-size: 1rem;
     font-style: italic;
   }
-
-header, footer {
-  background-color: #3d321e ;
-  color: #fff;
-  border-radius: 10px;
-}
 
 img {
     width: 200px;
