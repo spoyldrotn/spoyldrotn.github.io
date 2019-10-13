@@ -1,17 +1,59 @@
-@media only screen and (min-width: 32.5em){
-    h1 {
-        margin: .25rem;
-        font-size: 2rem;
-    }
-h2 {
-    font-size: 1rem;
-    font-style: italic;
-  }
+@media only screen and (min-width: 37.5em) {
 
-img {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-  }
+    main,
+    footer {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    footer {
+        border-radius: 10px;
+    }
+
+
+    nav {
+        background-color: #d6eefc;
+    }
+
+    .navigation {
+        display: flex;
+        margin: auto;
+
+    }
+
+    nav ul{
+        flex-direction: row;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+
+    .navigation li {
+        display: block;
+        font-size: 0.8rem;
+        flex: 1 1 100%;
+        padding: 2px 1px;
+    }
+
+    .navigation li a {
+        border: none;
+        border-radius: 10px;
+        background-color: #4dc1cc;
+
+    }
+
+    .navigation li.active a {
+        border-radius: 10px;
+    }
+
+    .navigation li a:hover {
+        border-radius: 10px;
+
+    }
+
+
+
 
 }
