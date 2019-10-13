@@ -24,6 +24,7 @@
         font-size: larger;
         margin-left: 17px;
         display: flex;
+        flex-direction: row;
     }
 
     nav a {
@@ -45,7 +46,6 @@
         flex-direction: row;
     }
     
-
     header {
         background-color: #3d321e;
         padding: 5px 0;
