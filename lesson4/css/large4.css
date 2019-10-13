@@ -11,19 +11,15 @@
         font-size: 0.8rem;
     }
 
-    header img {
-        width:100%;
-    }
-
-    .headings h1{
-        font-size: 3em;
+     .headings h1{
+        font-size: 2.5em;
+        display: inline-block;
     }
     
     .m {
         letter-spacing: 1.5pt;
         font-size: larger;
-        margin-left: 17px;
-        display: flex;
+        display: inline-block;
         flex-direction: row;
     }
 
@@ -53,9 +49,18 @@
         align-items: center;
         justify-content: center;
         border-radius: 10px;
+        flex-flow: row;
+    
     }
     body {
         max-width: 800px;
+    }
+    header img {
+        height: auto;
+        border-radius: 10px;
+        margin: 0 2%;
+        max-width: 800px;
+
     }
 }
 
