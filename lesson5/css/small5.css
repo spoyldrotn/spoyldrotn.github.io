@@ -158,7 +158,7 @@ nav a:hover {
         background-color: #4dc1cc;
  }
 .navigation li a :hover {
-    background-color: #f7c96fc;
+    background-color: #f7c96f;
     color: #3d321e;
 }
 
@@ -236,6 +236,4 @@ article p {
     float: left;
     width: 60%;
     padding: 0 0 1% 2%;
-}
-
 }
