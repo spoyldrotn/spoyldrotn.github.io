@@ -1,12 +1,12 @@
 section {
 	margin: 10px auto;
-	width: 600px;
+	width: 350px;
 	background-color: #19495b;
 	color: #ffffff;
 	padding: 10px;
 	display: grid;
-	grid-template-columns: 200px 1fr;
-	grid-gap: 10px;
+	grid-gap: 5px;
+	
 }
 
 h2 {
@@ -18,14 +18,24 @@ img[data-src] {
 }
 
 img {
+	max-width: 300px;
+	height: 400 px;
 	grid-column: 1 / 1;
 	filter: blur(0em);
 	transition: filter 3s;
 }
+ picture{
+	 margin: 25px;
+	 display: grid;
+ }
 
-article {
-	grid-column 2 / 3;
+ h1 {
+    font-family: 'Kaushan Script', cursive;
+	color: #f7c96f;
+	text-align: center;	
 }
-
-
+body {
+    display: block;
+	margin: 0 auto;
+}
 
