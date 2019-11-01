@@ -157,12 +157,12 @@ nav a:hover {
         border-radius: 10px;
         background-color: #4dc1cc;
  }
-.navigation li a :hover {
+.navigation li a:hover {
     background-color: #f7c96f;
     color: #3d321e;
 }
 
-.navigation li.active a {
+.navigation li:active a {
     background-color: #f7c96f;
     color: #3d321e;
 }
@@ -241,6 +241,14 @@ article p {
 
 .weather{
     width: 100%;
+}
+
+.hidesmall{
+    display: none;
+}
+
+footer a {
+    color: #f7c96f;
 }
 
  WebFont.load({
