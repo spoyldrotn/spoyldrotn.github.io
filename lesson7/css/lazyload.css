@@ -1,4 +1,4 @@
-section {
+.lazy-section {
 	margin: 10px auto;
 	width: 350px;
 	background-color: #19495b;
@@ -22,7 +22,7 @@ img {
 	height: 400 px;
 	grid-column: 1 / 1;
 	filter: blur(0em);
-	transition: filter 3s;
+	transition: filter 2s;
 }
  picture{
 	 margin: 25px;

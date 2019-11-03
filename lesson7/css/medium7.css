@@ -1,0 +1,63 @@
+@media only screen and (min-width: 37.5em) {
+
+    main,
+    footer {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 700px;
+        min-width: 37.5em;
+    }
+
+    footer {
+        border-radius: 10px;
+    }
+
+    .navigation {
+        display: flex;
+        margin: auto;
+
+    }
+
+    nav ul{
+        flex-direction: row;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+
+    .navigation li {
+        display: block;
+        font-size: 0.8rem;
+        padding: 2px 1px;
+    }
+
+    .navigation li a {
+        border: none;
+        border-radius: 10px;
+        background-color: #4dc1cc;
+
+    }
+        
+
+    .navigation li.active a {
+        border-radius: 10px;
+    }
+
+    .navigation li a:hover {
+        border-radius: 10px;
+
+    }
+
+    .hidesmall{
+        display: block;
+    }
+    /*Idaho Gallery Grid*/
+
+    .gallery_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        width: 100%;
+    
