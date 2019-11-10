@@ -43,6 +43,7 @@ fieldset {
 legend {
     font-family: 'Kaushan Script', 'script','Arial';
     font-size: 1.5em;
+    color: #3d321e;
 }
 
 input[type="button"] {
