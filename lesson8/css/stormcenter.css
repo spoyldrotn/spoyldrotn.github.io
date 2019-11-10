@@ -9,6 +9,15 @@ body {
 em {
 	font-size: smaller;
 }
+
+form{
+    line-height: 2;
+}
+
+label{
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
 .container {
 	display: grid;
 	grid-gap: .5rem;
@@ -29,25 +38,26 @@ input:focus {
 }
 fieldset {
 	background-color: #eee;
-	border: 1px solid #ccc;
+    border: 1px solid #ccc;
 }
 legend {
-	font-family: Arial, sans-serif;
+    font-family: 'Kaushan Script', 'script','Arial';
+    font-size: 1.5em;
 }
 
 input[type="button"] {
 	color: blue;
 }
 input[type="button"]:hover {
-	background-color: #ddf;
+	background-color: #ffffff;
 }
 
 input:invalid {
-	background-color: #fdd;
+	background-color: #ffffff;
 	color: #000;
 }
 input:valid {
-	background-color: #dfd;
+	background-color: #ffffff;
 	color: #000;
 }
 
