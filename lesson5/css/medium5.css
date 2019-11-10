@@ -4,8 +4,6 @@
     footer {
         margin: 0 auto;
         width: 100%;
-        max-width: 700px;
-        min-width: 37.5em;
     }
 
     footer {
@@ -50,7 +48,6 @@
 
     }
 
-
-
-
-}
+    .hidesmall { 
+        display: block;
+    }

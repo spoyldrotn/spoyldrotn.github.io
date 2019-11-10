@@ -24,10 +24,11 @@ html, body {
   }
   
   th, td {
-    padding: 1em;
+    padding: 8px;
     margin: 0;
     border: 1px solid #cecdcd;
   }
+
   tbody{
     background: #e7ffed;
   }

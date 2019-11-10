@@ -69,15 +69,13 @@
     img[data-src]{
         filter: blur(.5em);
     }
-    .gallery_grid img{
+    .gallery_grid {
         width: 100%;
-        max-width: 300px;
-        height: 400 px;
         filter: blur(0em);
         transition: filter 3s;
       
     }
-    .gallery_grid img :hover{
+    .gallery_grid figure:hover{
         box-shadow: 0 0 50px #19495b;
         margin: auto;
     }

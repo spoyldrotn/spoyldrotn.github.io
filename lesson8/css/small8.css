@@ -76,6 +76,7 @@ h3 {
 main, footer {
     width: 100%;
     max-width: 400px;
+    margin: auto;
 }
 
 p {
@@ -129,6 +130,11 @@ nav button {
     color: #3d321e;
 }
 
+nav a:hover {
+    background-color: #f7c96f;
+    color: #3d321e;
+}
+
 .navigation {
     list-style: none;
     padding: 0;
@@ -147,20 +153,22 @@ nav button {
     color: #ffffff;
 }
 
- .navigation li a {
+.navigation li a {
         border: none;
         border-radius: 10px;
         background-color: #4dc1cc;
  }
-nav a:hover {
-    background-color: #D2cec4;
+.navigation li a:hover {
+    background-color: #f7c96f;
     color: #3d321e;
 }
-.active {
-    color: #f7c96f;
+
+.navigation li :active a {
+    background-color: #f7c96f;
+    color: #3d321e;
 }
 
-.navigation li:first-child {
+.navigation li :first-child {
     display: block;
 }
 
@@ -176,4 +184,86 @@ main section {
     display: block;
     justify-content: center;
     align-items: center;
+}
+
+.news img {
+    float: right;
+    width: 40%;
+    padding: 0 0 1% 2%;
+}
+
+.weather img {
+    max-width: 1200px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.weather {
+    margin: 10px auto;
+    position: relative;
+    width: 100%;
+}
+
+.weather h4, p {
+    margin: 0;
+    color:#ffffff;
+    font-family: 'Open Sans','Arial';
+    
+}
+article p {
+    color:#3d321e;
+
+}
+
+.highlights {
+	position: absolute;
+	top: 25px;
+	left: 50px;
+	background: radial-gradient(#4dc1cc, #19495a);
+	border: 1px solid #000;
+	padding: 1.5rem;
+	box-shadow: 0 0 30px #111;
+	opacity: .8;
+}
+
+.contentbox {
+    background-color: #f7c96f;
+    margin: 2% 0;
+    padding: 2%;
+    display: flex;
+    border-radius: 10px;
+}
+
+.leftcol img {
+    float: left;
+    width: 60%;
+    padding: 0 0 1% 2%;
+}
+
+.weather{
+    width: 100%;
+}
+
+.hidesmall{
+    display: none;
+}
+
+footer a {
+    color: #f7c96f;
+}
+
+
+/*Image Gallery*/
+
+.gallery_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    width: 100%;
+}
+
+figcaption {
+    font-family: 'Kaushan Script', 'script','Arial';
+    color: #19495b;
+    font-size: .75em;
 }

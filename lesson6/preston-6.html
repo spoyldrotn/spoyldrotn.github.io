@@ -2,9 +2,10 @@
 <html lang="en-us">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="device=device-width, initial-scale=1">
+<meta name="viewport" content="width=device, initial-scale=1">
 <title>CIT 230: Preston Page</title>
 <meta name="description" content="Preston Page Week 6 CIT 230">
+<link rel="icon" sizes="16x16 24x24 32x32 48x48 64x64" href="favicon.ico">
 <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/normalize6.css">
 <link href="css/small6.css" rel="stylesheet">
@@ -39,15 +40,15 @@
                 <picture id="hero_pic">
                     <img id="franklin_sky" src="images/cit230_image_franklin.jpg" alt="Franklin Sky" 
                     srcset="images/cit230_image_franklin_large.jpg 1200w, images/cit230_image_franklin_medium.jpg 800w, 
-                    images/cit230_image_franklin_small 400w" sizes="(min-width:1200px), 800px, 400vw">
+                    images/cit230_image_franklin_small 400w" sizes="(min-width:1200px) 800px, 100vw">
                 </picture>
                 <section class="highlights">
                     <h4>Weather Summary</h4>
                     <p>Currently: Rainy</p>
-                    <p>High: 54° F</p>
-                    <p>Wind Chill: 51° F</p>
+                    <p>High: <span id="temp">54°</span> F</p>
+                    <p>Wind Chill: <span id="chill">51°</span> F</p>
                     <p>Humidity: 95%</p>
-                    <p>Wind Speed: 12 mph</p>
+                    <p>Wind Speed: <span id="speed">12</span> mph</p>
                 </section>
             </div>
 
@@ -90,11 +91,8 @@
         <script src="js/currentdate.js"></script>
         <script src="js/lastmodified.js"></script>
         <script src="js/windchill.js"></script>
-
-
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script>WebFont.load({
-            google: {families: ['fontfamilyKaushan']}});
+
         </script>
     </body>
 </html>

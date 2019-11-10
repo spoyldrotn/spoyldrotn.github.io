@@ -162,7 +162,7 @@ nav a:hover {
     color: #3d321e;
 }
 
-.navigation li:active a {
+.navigation li a:active {
     background-color: #f7c96f;
     color: #3d321e;
 }
@@ -251,10 +251,3 @@ footer a {
     color: #f7c96f;
 }
 
- WebFont.load({
-        google: {
-            families: [
-            'fontfamilyKaushan'
-            ]
-        }
-    });

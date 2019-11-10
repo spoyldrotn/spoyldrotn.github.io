@@ -56,8 +56,36 @@
         border-radius: 10px;
         margin: 0 2%;
         width: 100px;
-     
+     }
 
+     /*Idaho Gallery Grid*/
+
+    .gallery_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: auto;
+        width: 100%;
     }
-}
-
+    img[data-src]{
+        filter: blur(.5em);
+    }
+    .gallery_grid {
+        width: 100%;
+        filter: blur(0em);
+        transition: filter 3s;
+      
+    }
+    .gallery_grid figure:hover{
+        box-shadow: 0 0 50px #19495b;
+        margin: auto;
+    }
+    figcaption {
+        font-family: 'Kaushan Script', 'script','Arial';
+        color: #19495b;
+        font-size: 1.4em;
+    }
+    .grid_title h1{
+        color: #19495b;
+        margin: auto;
+        display:inline-block;
+    }

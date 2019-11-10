@@ -41,7 +41,7 @@
     }
         
 
-    .navigation li.active a {
+    .navigation li a.active {
         border-radius: 10px;
     }
 
