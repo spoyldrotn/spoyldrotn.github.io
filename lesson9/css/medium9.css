@@ -8,10 +8,6 @@ footer {
     min-width: 37.5em;
 }
 
-footer {
-    border-radius: 10px;
-}
-
 .navigation {
     display: flex;
     margin: auto;

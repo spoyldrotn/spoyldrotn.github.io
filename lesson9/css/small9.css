@@ -76,7 +76,6 @@ h3 {
 main, footer {
     width: 100%;
     max-width: 400px;
-    margin: auto;
 }
 
 p {
@@ -163,12 +162,12 @@ nav a:hover {
     color: #3d321e;
 }
 
-.navigation li :active a {
+.navigation li a:active {
     background-color: #f7c96f;
     color: #3d321e;
 }
 
-.navigation li :first-child {
+.navigation li:first-child {
     display: block;
 }
 
@@ -252,18 +251,3 @@ footer a {
     color: #f7c96f;
 }
 
-
-/*Image Gallery*/
-
-.gallery_grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: auto;
-    width: 100%;
-}
-
-figcaption {
-    font-family: 'Kaushan Script', 'script','Arial';
-    color: #19495b;
-    font-size: .75em;
-}

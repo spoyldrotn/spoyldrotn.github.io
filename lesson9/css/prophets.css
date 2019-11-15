@@ -39,9 +39,16 @@ body {
 }
 
 footer {
-    background color: #3d321e;
+    background-color: #3d321e;
     color: #ffffff;
     font-family: 'Kaushan Script', cursive;
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+}
 }
 
 
