@@ -1,0 +1,91 @@
+@media only screen and (min-width: 65em) {
+
+    main,
+    footer {
+        font-size: 1rem;
+        width: 100%;
+        max-width: 800px;
+    }
+
+    
+    .navigation li a {
+        padding: 0.6rem;
+        font-size: 0.8rem;
+    }
+
+     .headings h1{
+        font-size: 2.5em;
+        display: inline-block;
+    }
+    
+    .m {
+        letter-spacing: 1.5pt;
+        font-size: larger;
+        display: inline-block;
+        flex-direction: row;
+    }
+
+    nav a {
+        background-color: transparent;
+        display: flex;
+        align-content: center;
+        justify-content: space-evenly;
+        list-style-type: none;
+        font-size: 1.1em;
+        }
+
+    .headings {
+        display: flex;
+        }
+
+    nav ul {
+        display: flex; 
+        flex-direction: row;
+    }
+    
+    header {
+        background-color: #3d321e;
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row;
+    }
+    header img {
+        height: auto;
+        border-radius: 10px;
+        margin: 0 2%;
+        width: 100px;
+     }
+
+     /*Idaho Gallery Grid*/
+
+    .gallery_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: auto;
+        width: 100%;
+    }
+    img[data-src]{
+        filter: blur(.5em);
+    }
+    .gallery_grid {
+        width: 100%;
+        filter: blur(0em);
+        transition: filter 3s;
+      
+    }
+    .gallery_grid figure:hover{
+        box-shadow: 0 0 50px #19495b;
+        margin: auto;
+    }
+    figcaption {
+        font-family: 'Kaushan Script', 'script','Arial';
+        color: #19495b;
+        font-size: 1.4em;
+    }
+    .grid_title h1{
+        color: #19495b;
+        margin: auto;
+        display:inline-block;
+    }

@@ -1,0 +1,47 @@
+.lazy-section {
+	margin: 10px auto;
+	width: 350px;
+	background-color: #19495b;
+	color: #ffffff;
+	padding: 10px;
+	display: grid;
+	grid-gap: 5px;
+	
+}
+
+h2 {
+	grid-column: 1 / -1;
+}
+
+img[data-src] {
+	filter: blur(0.5em);
+}
+
+img {
+	width: 100%;
+	grid-column: 1 / 1;
+	filter: blur(0em);
+	transition: filter 2s;
+}
+picture{
+	 margin: 25px;
+	 display: grid;
+ }
+
+h1 {
+    font-family: 'Kaushan Script', cursive;
+	color: #ffffff;
+	text-align: center;	
+}
+body {
+    display: block;
+	margin: 0 auto;
+}
+
+footer {
+    background color: #3d321e;
+    color: #ffffff;
+    font-family: 'Kaushan Script', cursive;
+}
+
+
