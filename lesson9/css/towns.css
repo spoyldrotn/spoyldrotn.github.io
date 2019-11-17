@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+header, footer{
+	background-color: #3d321e;
+	color: #ffffff;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	flex-flow: row;
+	width: 100%;
+	text-align: center;
+}
+
+h2 {
+	grid-column: 1 / -1;
+    font-family: 'Kaushan Script', cursive;
+    color:  #f7c96f;
+}
+
+h3{
+    grid-column: 1/-1;
+    font-family: 'Kaushan Script', cursive;
+    color: #4dc1cc;
+}
+
+.towns img {
+	grid-column: 1 / 1;
+	height:auto;
+	width: 350px;
+	margin: 25px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.75);
+	border-radius: 10px;
+}
+
+h1, footer {
+    font-family: 'Kaushan Script', cursive;
+	color: #ffffff;
+	text-align: center;	
+}
+body {
+    display: block;
+	margin: 0 auto;
+}
+
+footer {
+    font-size: 18px;
+}
+
+main{
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.article {
+    background-color:#4dc1cc;
+    color: #000000;
+    border-radius: 10px;
+}
+
+.towns{
+	display: grid;
+	grid-gap: .5rem;
+	align-items: center;
+	text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    width: 940px;
+}
+
+header,
+main,
+footer {
+    margin: 0 auto; 
+}
+
+.towns div {
+    margin: auto;
+	width: 350px;
+	height: 450px;
+	background-color: #19495b;
+	color: #ffffff;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.sunset{
+    width: 135%;
+}
+
+@media only screen and (min-width: 32.5em) {
+    
+.towns {
+    grid-template-columns: 1fr 1fr;
+ }
+
+img {
+    width: 45%;
+}
+
+@media only screen and (min-width: 56em) {
+
+.towns { 
+	grid-template-columns: 1fr 1fr 1fr;
+}
+img {
+	width: 60%;
+}
