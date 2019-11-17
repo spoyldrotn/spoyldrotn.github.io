@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CIT 230: Storm Center Page</title>
 <meta name="description" content="Storm Center Page CIT 230">
 <link rel="icon" sizes="16x16 24x24 32x32 48x48 64x64" href="favicon.ico">
@@ -17,7 +17,6 @@
 </head>
     <body>
         <header>
-        <script src="js/banner.js"></script>   
         <img src="images/logo2.png" alt="Normal Weather,I Drought It logo">
             <section class="headings">
                 <h1>Normal Weather, I Drought It</h1>
@@ -27,24 +26,24 @@
         <nav>
             <ul class="navigation">
                 <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-                <li><a href="#">Home</a>
-                    <li class="active"><a href="../preston-6.html">Preston</a>
+                <li><a href="../lesson9/index.html">Home</a>
+                    <li ><a href="../preston-6.html">Preston</a>
                     <li><a href="#">Soda Springs</a>
                     <li><a href="#">Fish Haven</a>
-                    <li><a href="storm_center.html">Storm Center</a>
+                    <li class="active"><a href="storm_center.html">Storm Center</a>
                     <li><a href="../lesson7/gallery.html">Gallery</a>
             </ul>
             
         </nav>
         <main>
             <h2>Storm Center Notification</h2>
-            <form action="thanks.html" method="get" target="_blank">
+            <form action="thanks.html" method="get">
                 <fieldset>
                 <legend><strong>Contact Information</strong></legend>
-                <label for="name">Full Name:</label><input type="text" id="name" name="name" required minlength= "5" maxlength="25" size="30"><br>
+                <label for="name">Full Name:</label><input type="text" id="name" name="name" required pattern='[A-Za-z]{5, }' size="30"><br>
                 <label for="email">E-Mail:<input type="email" id="email" name="email" placeholder="user@email.org"></label><br>
                 <label>Phone: <input type="tel" name="phone" placeholder="###-###-####" required></label><br>
-                <label for="num">Zip Code:<input type="number" id="num" name="zip" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep" required></label><br>
+                <label for="num">Zip Code:<input type="number" id="num" name="zip"required></label><br>
             </fieldset>
 
             <fieldset>
@@ -78,7 +77,7 @@
                         </datalist>
 
              <label for="regions">Storm Regions:</label><select id="regions" name="regions">
-                    <option value="Select Region" disabled>Select Region</option>
+                    <option value="Select Region" selected disabled>Select Region</option>
                     <option value="Preston">Preston</option>
                     <option value="Soda Springs">Soda Springs</option>
                     <option value="Fish Haven">Fish Haven</option>
@@ -107,16 +106,13 @@
         </form>
         </main>
         <footer>
-                <p>&copy; <span id="currentdate">
+                <p>&copy; 
                 </span>Normal Weather, I Drought It | Taci Watterson-Balls |  
                 <a href="../lesson4/terms.html" target="_blank">Terms of Use</a>
                 <script src="js/responsive.js"></script>
-                <script src="js/getdate.js"></script>
+      
         </footer>
-
-
-        <script src="js/currentdate.js"></script>
-        <script src="js/lastmodified.js"></script>
+      
         <script src="js/adjustrating.js"></script>
     </body>
 </html>
