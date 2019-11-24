@@ -28,7 +28,7 @@ h3{
 .towns img {
 	grid-column: 1 / 1;
 	height:auto;
-	width: 95%;
+	width: 75%;
 	margin: auto;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.75);
 	border-radius: 10px;
@@ -76,14 +76,16 @@ footer {
     margin: 0 auto; 
 }
 
-.towns div {
+.towns>div {
   margin: auto;
-	width: 250px;
-	height: 350px;
+	width: 100%;
+	height: 100%;
 	background-color: #19495b;
 	color: #ffffff;
 	padding: 5px;
-	border-radius: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 .sunset{
@@ -101,12 +103,26 @@ nav{
 @media only screen and (min-width: 32.5em) {
     
 .towns {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
  }
 
 img {
     width: 45%;
 }}
+.towns>div {
+    margin: auto;
+      width: 100%;
+      height: 100%;
+      background-color: #19495b;
+      color: #ffffff;
+      padding: 5px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+  }
+  .towns>div>div{
+    width: 50%;
+}
 
 @media only screen and (min-width: 56em) {
 
@@ -116,5 +132,19 @@ img {
 
 img {
 	width: 60%;
+}
+.towns>div {
+    margin: auto;
+      width: 100%;
+      height: 100%;
+      background-color: #19495b;
+      color: #ffffff;
+      padding: 5px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: row reverse;
+  }
+  .towns>div>div{
+    width: 50%;
 }
 }
