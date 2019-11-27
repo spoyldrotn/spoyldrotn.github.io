@@ -124,6 +124,10 @@ img {
     width: 50%;
 }
 
+
+
+
+
 @media only screen and (min-width: 56em) {
 
 .towns { 
@@ -144,7 +148,14 @@ img {
       display: flex;
       flex-direction: row reverse;
   }
-  .towns>div>div{
+.towns>div>div{
     width: 50%;
 }
+article {
+    display: flex;
+      flex-direction: columns;
+  }
+  
+article:nth-child(odd) {
+      flex-direction: row-reverse;
 }

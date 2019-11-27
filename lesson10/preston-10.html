@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device, initial-scale=1">
+<title>CIT 230: Preston Page</title>
+<meta name="description" content="Preston Page Week 10 CIT 230">
+<link rel="icon" sizes="16x16 24x24 32x32 48x48 64x64" href="favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/normalize10.css">
+<link href="css/small10.css" rel="stylesheet">
+<link href="css/medium10.css" rel="stylesheet">
+<link href="css/large10.css" rel="stylesheet">
+
+</head>
+    <body>
+        <header>
+        <script src="js/banner.js"></script>   
+        <img src="images/logo2.png" alt="Normal Weather,I Drought It logo">
+            <section class="headings">
+                <h1>Normal Weather, I Drought It</h1>
+                <div class="m">We're never optimistic 'bout the weather 'round here!</div>
+            </section>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#">Home</a>
+                    <li class="active"><a href="preston-10.html">Preston</a>
+                    <li><a href="#">Soda Springs</a>
+                    <li><a href="#">Fish Haven</a>
+                    <li><a href="../lesson8/storm_center.html">Storm Center</a>
+                    <li><a href="../lesson7/gallery.html">Gallery</a>
+            </ul>
+            
+        </nav>
+        <main>
+            <h2>Preston</h2>
+            <div class="weather">
+                <picture id="hero_pic">
+                    <img id="franklin_sky" src="images/cit230_image_franklin.jpg" alt="Franklin Sky" 
+                    srcset="images/cit230_image_franklin_large.jpg 1200w, images/cit230_image_franklin_medium.jpg 800w, 
+                    images/cit230_image_franklin_small 400w" sizes="(min-width:1200px) 800px, 100vw">
+                </picture>
+                <section class="highlights"><h4>Weather Summary</h4>
+                    <p>Currently: <span id="currently"></span></p>
+                    <p>High: <span id="current-temp"></span>&deg; F</p>
+                    <p>Wind Chill: <span id="windChill"></span></p>
+                    <p>Humidity: <span id="humidity"></span></p></p>
+                    <p>Wind Speed: <span id="windspeed"></span> mph</p>
+                </section>
+            </div>
+
+            <div class='contentbox forecast hidesmall'>
+                    <h3>5-Day Forecast</h3>
+                    <table>
+                        <tr>
+                            <th><span id="day1"></span></th>
+                            <th><span id="day2"></span></th>
+                            <th><span id="day3"></span></th>
+                            <th><span id="day4"></span></th>
+                            <th><span id="day5"></span></th>
+                        </tr>
+                        <tr>
+                            <th><span id="temp1"></span>&deg; F</th>
+                            <th><span id="temp2"></span>&deg; F</th>
+                            <th><span id="temp3"></span>&deg; F</th>
+                            <th><span id="temp4"></span>&deg; F</th>
+                            <th><span id="temp5"></span>&deg; F</th>
+                        </tr>
+                    </table>
+            </div>
+            <div class='news'>
+                <img id="newspic" src="images/newspic.jpg" alt="Weston Sunset">
+                <article> 
+                <h3>Article</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </article>
+            </div>
+
+            <div class='contentbox contact'>
+                <section class= "leftcol hidesmall">
+                    <img src="images/contact.png" alt="Map of Idaho">
+                </section>
+                <section class="rightcol">
+                     <h3>Contact Information</h3>
+                     <p>City of Preston, ID
+                         <br> 18 West Center 
+                         <br> Preston, ID 83263
+                         <br>208.852.1817
+                         <br><a href="www.prestonid.net" target="_blank">City of Preston</a>
+                     </p>
+                </section>
+            </div>
+
+        </main>
+        <footer>
+                <p>&copy; <span id="currentdate">
+                </span>Normal Weather, I Drought It | Taci Watterson-Balls |  
+                <a href="lesson4/terms.html" target="_blank">Terms of Use</a>
+                <script src="js/responsive.js"></script>
+                <script src="js/getdate.js"></script>
+        </footer>
+
+        <script src="preston.js"></script>
+        <script src="js/currentdate.js"></script>
+        <script src="js/lastmodified.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+        </script>
+    </body>
+</html>
