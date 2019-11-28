@@ -40,7 +40,7 @@ header h1 {
     color: #f7c96f;
     margin-left: 20px;
     font-size: .9rem;
-    font-family: 'Open Sans','Arial';
+    font-family: 'Original Surfer', cursive;
     display: flex;
     flex-direction: row;
 }
@@ -95,7 +95,7 @@ footer p {
 
 nav {
     background-color: #4dc1cc;
-    font-family: 'open sans', 'arial';
+    font-family: 'Original Surfer', cursive;
     color: #ffffff;
     text-align: center;
     box-shadow: 0 2px 15px #19495b;
