@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+header, footer{
+	background-color: #3d321e;
+	color: #ffffff;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+     justify-content: center;
+	flex-flow: row;
+	width: 100%;
+	text-align: center;
+}
+
+h2 {
+	grid-column: 1 / -1;
+    font-family: 'Kaushan Script', cursive;
+    color:  #f7c96f;
+}
+
+h3{
+    grid-column: 1/-1;
+    font-family: 'Kaushan Script', cursive;
+    color: #4dc1cc;
+}
+
+.towns img {
+	grid-column: 1 / 1;
+	height:auto;
+	width: 75%;
+	margin: auto;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.75);
+	border-radius: 10px;
+}
+
+h1, footer {
+    font-family: 'Kaushan Script', cursive;
+	color: #ffffff;
+	text-align: center;	
+}
+body {
+    display: block;
+	margin: 0 auto;
+}
+
+footer {
+    font-size: 18px;
+	border-radius: 10px;
+}
+
+main{
+    margin: auto;
+    padding: 5px;
+}
+
+article {
+    background-color:#4dc1cc;
+    color: #000000;
+    border-radius: 10px;
+	 padding: 15px;
+}
+
+.towns{
+    display: grid;
+    grid-gap: .25rem;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+}
+
+header,
+main,
+footer {
+    margin: 0 auto; 
+}
+
+.towns>div {
+  margin: auto;
+	width: 100%;
+	height: 100%;
+	background-color: #19495b;
+	color: #ffffff;
+	padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sunset{
+    width: 100%;
+	border-radius: 10px;
+}
+.towns p{
+	padding: 5px;
+}
+
+nav{
+	margin-bottom:20px;
+}
+
+@media only screen and (min-width: 32.5em) {
+    
+.towns {
+    grid-template-columns: 1fr;
+ }
+
+img {
+    width: 45%;
+}}
+.towns>div {
+    margin: auto;
+      width: 100%;
+      height: 100%;
+      background-color: #19495b;
+      color: #ffffff;
+      padding: 5px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+  }
+  .towns>div>div{
+    width: 50%;
+}
+
+
+
+
+
+@media only screen and (min-width: 56em) {
+
+.towns { 
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+img {
+	width: 60%;
+}
+.towns>div {
+    margin: auto;
+      width: 100%;
+      height: 100%;
+      background-color: #19495b;
+      color: #ffffff;
+      padding: 5px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: row reverse;
+  }
+.towns>div>div{
+    width: 50%;
+}
+article {
+    display: flex;
+      flex-direction: columns;
+  }
+  
+article:nth-child(odd) {
+      flex-direction: row-reverse;
+}
