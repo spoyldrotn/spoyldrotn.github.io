@@ -2,9 +2,9 @@
 <html lang="en-us">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CIT 230: Weather Site</title>
-<meta name="description" content="Weather Site Week 11 CIT 230">
+<meta name="description" content="Preston Page CIT 230">
 <link rel="icon" sizes="16x16 24x24 32x32 48x48 64x64" href="images/favicon.ico">
 <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/normalize.css">
@@ -27,7 +27,7 @@
         <nav>
             <ul class="navigation">
                 <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-                <li><a href="index.html">Home</a>
+                    <li><a href="index.html">Home</a>
                     <li class="active"><a href="preston.html">Preston</a>
                     <li><a href="soda_springs.html">Soda Springs</a>
                     <li><a href="fish_haven.html">Fish Haven</a>
@@ -64,11 +64,18 @@
                             <th><span id="day5"></span></th>
                         </tr>
                         <tr>
-                            <th><span id="high1"></span>&deg; F</th>
-                            <th><span id="high2"></span>&deg; F</th>
-                            <th><span id="high3"></span>&deg; F</th>
-                            <th><span id="high4"></span>&deg; F</th>
-                            <th><span id="high5"></span>&deg; F</th>
+                            <td><span id="high1"></span>&deg;F</td>
+                            <td><span id="high2"></span>&deg;F</td>
+                            <td><span id="high3"></span>&deg;F</td>
+                            <td><span id="high4"></span>&deg;F</td>
+                            <td><span id="high5"></span>&deg;F</td>
+                        </tr>
+                        <tr>
+                            <td><img id="icon1" src="https://openweathermap.org/img/w/13d.png" alt="light snow"></td>
+                            <td><img id="icon2" src="https://openweathermap.org/img/w/13d.png" alt="light snow"></td>
+                            <td><img id="icon3" src="https://openweathermap.org/img/w/13d.png" alt="light snow"></td>
+                            <td><img id="icon4" src="https://openweathermap.org/img/w/13d.png" alt="light snow"></td>
+                            <td><img id="icon5" src="https://openweathermap.org/img/w/13d.png" alt="light snow"></td>
                         </tr>
                     </table>
             </div>
@@ -99,9 +106,10 @@
         <footer>
                 <p>&copy; <span id="currentdate">
                 </span> Normal Weather, I Drought It | Taci Watterson-Balls |  
-                <a href="../lesson4/terms.html" target="_blank">Terms</a>
-                <script src="js/responsive.js"></script><br>
-                <p> Last Updated: <span id="lastUpdate">
+                <a href="../lesson4/terms.html" target="_blank">Terms</a></p>
+                <p> Last Updated: <span id="lastUpdate"></span></p>
+                <script src="js/responsive.js"></script>
+            
             
         </footer>
         <script src="js/currentdate.js"></script>

@@ -262,6 +262,7 @@ table {
     padding: 10px;
     box-shadow: 10px 10px 5px -5px #000000;
     width: 75%;
+    text-align: center;
   }
   
   thead, tfoot {
@@ -273,7 +274,9 @@ table {
     padding: 8px;
     margin: 0;
     border: 1px solid #666666;
+    font-family: 'Original Surfer', cursive;
   }
+
 
   tbody{
     background:  #4dc1cc;
@@ -293,3 +296,18 @@ table {
     margin: 5px auto;
   }
   
+
+/*Image Gallery*/
+
+.gallery_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    width: 100%;
+}
+
+figcaption {
+    font-family: 'Kaushan Script', 'script','Arial';
+    color: #19495b;
+    font-size: .75em;
+}

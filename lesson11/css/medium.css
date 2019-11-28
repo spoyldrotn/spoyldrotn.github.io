@@ -54,7 +54,17 @@
         display: block;
     }
 
+/*Gallery Grid*/
 
+.gallery_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 100%;
+}
 
-
+figcaption {
+    font-family: 'Kaushan Script', 'script','Arial';
+    color: #19495b;
+    font-size: 1em;
 }
