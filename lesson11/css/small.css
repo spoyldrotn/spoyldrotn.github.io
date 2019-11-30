@@ -125,7 +125,7 @@ nav button {
     margin: .2rem 2%;
     background-color: transparent;
     border: none;
-    font-size: 1.6rem;
+    font-size: 1.45rem;
     color: #3d321e;
 }
 
@@ -147,7 +147,7 @@ nav a:hover {
 .navigation a {
     background-color: transparent;
     display: block;
-    padding: 0.8rem 2%;
+    padding: 0.5rem 2%;
     text-decoration: none;
     color: #ffffff;
 }

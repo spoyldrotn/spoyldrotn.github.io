@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CIT 230: Weather Site</title>
+<meta name="description" content="Soda Springs Page CIT 230">
+<link rel="icon" sizes="16x16 24x24 32x32 48x48 64x64" href="images/favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/normalize.css">
+<link href="css/small.css" rel="stylesheet">
+<link href="css/medium.css" rel="stylesheet">
+<link href="css/large.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Original+Surfer&display=swap" rel="stylesheet"> 
+
+</head>
+    <body>
+        <header>   
+        <script src="js/soda.js"></script>
+        <img src="images/logo.png" alt="Normal Weather,I Drought It Logo">
+            <section class="headings">
+                <h1>Normal Weather, I Drought It</h1>
+                <div class="m">We're never optimistic 'bout the weather 'round here!</div>
+            </section>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a>
+                    <li><a href="preston.html">Preston</a>
+                    <liclass="active"><a href="soda_springs.html">Soda Springs</a>
+                    <li><a href="fish_haven.html">Fish Haven</a>
+                    <li><a href="storm_center.html">Storm Center</a>
+                    <li><a href="gallery.html">Gallery</a>
+            </ul>
+            
+        </nav>
+        <main>
+            <h2>Soda Springs</h2>
+            <div class="weather">
+                <picture id="hero_pic">
+                    <img id="franklin_sky" src="images/soda_geyser.jpg" alt="Natural Geyser in Soda Springs, Idaho"
+                    srcset="images/soda_geyser_large.jpg 1200w, images/soda_geyser_medium.jpg 800w, 
+                    images/soda_geyser_small 400w" sizes="(min-width:1200px) 800px, 100vw">
+                </picture>
+                <section class="highlights"><h4>Weather Summary</h4>
+                    <p>Currently: <span id="weather"></span></p>
+                    <p>High: <span id="high"></span>&deg; F</p>
+                    <p>Humidity: <span id="humidity"></span>%</p></p>
+                    <p>Wind Speed: <span id="speed"></span> mph</p>
+                    <p>Wind Chill: <span id="windchill">NaN</span>&deg; F</p>
+                </section>
+            </div>
+
+            <div class='contentbox forecast hidesmall'>
+                    <h3>5-Day Forecast</h3>
+                    <table>
+                        <tr>
+                            <th><span id="day1"></span></th>
+                            <th><span id="day2"></span></th>
+                            <th><span id="day3"></span></th>
+                            <th><span id="day4"></span></th>
+                            <th><span id="day5"></span></th>
+                        </tr>
+                        <tr>
+                            <td><span id="high1"></span>&deg;F</td>
+                            <td><span id="high2"></span>&deg;F</td>
+                            <td><span id="high3"></span>&deg;F</td>
+                            <td><span id="high4"></span>&deg;F</td>
+                            <td><span id="high5"></span>&deg;F</td>
+                        </tr>
+                        <tr>
+                            <td><img id="icon1" src="https://openweathermap.org/img/w/13d.png" alt="light snow"></td>
+                            <td><img id="icon2" src="https://openweathermap.org/img/w/13d.png" alt="light snow"></td>
+                            <td><img id="icon3" src="https://openweathermap.org/img/w/13d.png" alt="light snow"></td>
+                            <td><img id="icon4" src="https://openweathermap.org/img/w/13d.png" alt="light snow"></td>
+                            <td><img id="icon5" src="https://openweathermap.org/img/w/13d.png" alt="light snow"></td>
+                        </tr>
+                    </table>
+            </div>
+            <div class='news'>
+                <img id="newspic" src="images/soda_rocks.jpg" alt="Rock at geyser in Soda Springs, Idaho">
+                <article> 
+                <h3>Our Captive Geyser</h3>
+                    <p>Soda Springs, Idaho is home to the world's only captive geyser. On November 30, 1937, the city drilled down 315 feet, and unleashed the geyser to the surprise of the residents. The Geyser was discovered in an attempt to find a hot water source for a swimming pool in the 1900s, and it reaches a height of approximately 100 feet or more. The extreme pressure that causes the eruption occurs due to carbon dioxide gas mixing with water in an underground chamber. It is now capped and controlled by a timer managed by the city of Soda Springs.
+                       Guests have an opportunity to view the spectacular eruption every hour on the hour from the comfort of the Geyser View Restaurant dining room, or they can get a closer view by stepping outside of the hotel and walking the short distance to the attraction.
+                       Guests of the Enders Hotel and Museum are able to walk to the Visitors Center for more information on the Geyser’s history. There is a boardwalk around the geyser, and grassy areas with tables and benches that are free to use for visitors. The Geyser is located directly behind the Enders Hotel located on 76 South and Main Street. </p></article>
+            </div>
+
+            <div class='contentbox contact'>
+                <section class= "leftcol hidesmall">
+                    <img src="images/soda_map.png" alt="Map of Soda Springs, Idaho">
+                </section>
+                <section class="rightcol">
+                     <h3>Contact Information</h3>
+                     <p>City of Soda Springs, ID
+                         <br> 9 West 2nd South 
+                         <br> Soday Springs, ID 83263
+                         <br>208.547.2600
+                         <br><a href="http://www.sodaspringsid.com/" target="_blank">City of Soda Springs</a>
+                     </p>
+                </section>
+            </div>
+
+        </main>
+        <footer>
+            <p>&copy; <span id="currentdate">
+            </span> Normal Weather, I Drought It | Taci Watterson-Balls |  
+            <a href="../lesson4/terms.html" target="_blank">Terms</a>
+            <script src="js/responsive.js"></script><br>
+            <p> Last Updated: <span id="lastUpdate">
+        
+        </footer>
+        <script src="js/currentdate.js"></script>
+        <script src="js/lastmodified.js"></script>
+    </body>
+</html>
