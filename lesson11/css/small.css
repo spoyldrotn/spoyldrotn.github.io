@@ -1,5 +1,5 @@
 * {
-        box-sizing:border-box;
+    box-sizing:border-box;
 }
 
 body {
@@ -19,8 +19,10 @@ footer {
     justify-content: center;
     padding: 5px 0;
     text-align: center;
-    font-size: .8rem;
-    margin: auto;
+    font-size: 18px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 5px 0;
 }
 
 header img {
@@ -73,9 +75,16 @@ h3 {
     text-align: center;
 }
 
-main, footer {
+main {
     width: 100%;
     max-width: 400px;
+}
+
+footer {
+    margin: auto;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
 }
 
 p {
@@ -84,7 +93,7 @@ p {
     color: #3d321e;
 }
 footer p {
-    font-size: 1em;
+    font-size: 18px;
     font-family: 'Open Sans','Arial';
     color: #ffffff;
 }
@@ -231,6 +240,10 @@ article p {
     padding: 2%;
     display: flex;
     border-radius: 10px;
+}
+
+.contact p {
+    color: #19495a;
 }
 
 .leftcol img {

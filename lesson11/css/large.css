@@ -1,10 +1,14 @@
 @media only screen and (min-width: 65em) {
 
-    main,
-    footer {
+    main {
         font-size: 1rem;
         width: 100%;
         max-width: 800px;
+    }
+
+    footer{
+        font-size: 18px;
+        width: 100%;
     }
 
     
