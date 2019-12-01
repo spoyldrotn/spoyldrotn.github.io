@@ -1,13 +1,13 @@
 * {
     box-sizing: border-box;
 }
-header, footer{
+header {
 	background-color: #3d321e;
 	color: #ffffff;
     padding: 5px 0;
     display: flex;
     align-items: center;
-     justify-content: center;
+    justify-content: center;
 	flex-flow: row;
 	width: 100%;
 	text-align: center;
@@ -46,7 +46,18 @@ body {
 
 footer {
     font-size: 18px;
-	border-radius: 10px;
+    border-radius: 10px;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    background-color: #3d321e;
+	color: #ffffff;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	width: 100%;
+	text-align: center;
 }
 
 main{
@@ -104,11 +115,11 @@ nav{
     
 .towns {
     grid-template-columns: 1fr;
- }
+}
 
 img {
     width: 45%;
-}}
+}
 .towns>div {
     margin: auto;
       width: 100%;
@@ -119,8 +130,8 @@ img {
       border-radius: 5px;
       display: flex;
       flex-direction: column;
-  }
-  .towns>div>div{
+}
+.towns>div>div{
     width: 50%;
 }
 
