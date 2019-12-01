@@ -153,9 +153,9 @@ nav a:hover {
 }
 
 .navigation li a {
-        border: none;
-        border-radius: 10px;
-        background-color: #4dc1cc;
+    border: none;
+    border-radius: 10px;
+    background-color: #4dc1cc;
  }
 .navigation li a:hover {
     background-color: #f7c96f;
@@ -310,4 +310,21 @@ figcaption {
     font-family: 'Kaushan Script', 'script','Arial';
     color: #19495b;
     font-size: .75em;
+}
+
+/*Events*/
+
+.events{
+    background-color: #4dc1cc;
+    margin: 2% 0;
+    padding: 2%;
+    display: flex;
+    border-radius: 10px; 
+}
+
+.events section{
+    background-color: #4dc1cc;
+    text-align: center;
+    color: #19495b;
+    font-size: 1.25em;
 }

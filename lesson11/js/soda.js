@@ -74,6 +74,25 @@ const jsonURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&uni
   });
 
 
+ // get city ID
 
+ let cityID = "5607916";
+ let townsIndex = 5;
+ 
+ // get upcoming events
+ 
+ const eventsJSON = "https://byui-cit230.github.io/weather/data/towndata.json";
+ fetch(eventsJSON) .then((response) => response.json()) .then((eventsObject) => {
+     //console.log(eventsObject.towns[townsIndex]);
+     let eventsSection = document.createElement("section");
+     for (let i = 0; i < eventsObject.towns[townsIndex].events.length; i++) {
+         //console.log(eventsObject.towns[townsIndex].events[i]);
+         let newEvent = document.createElement("p");
+         newEvent.textContent = eventsObject.towns[townsIndex].events[i];
+         eventsSection.appendChild(newEvent);
+     }
+     document.getElementById("events").appendChild(eventsSection);
+ });
+ 
 
 
