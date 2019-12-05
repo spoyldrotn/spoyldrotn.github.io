@@ -39,9 +39,8 @@ const jsonURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&uni
         /*Day of Week*/
 
         let myday = 'day' + count;
-        var d = new Date();
+        var d = new Date(jsObject.list[i].dt_txt);
         var n = d.getDay();
-        n = n + count - 1;
         if (n > 6){
           (n = n-7);
         }

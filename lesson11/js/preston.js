@@ -17,61 +17,59 @@ fetch(apiURL)
     document.getElementById('weather').textContent = desc;
 
   });
-    
 const jsonURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=c317d9209bfb5e25c584b2191d32c8fa';
    
-  fetch(jsonURL)
-  .then((response) => response.json())
-  .then((jsObject) => {
-    //console.log(jsObject);
+fetch(jsonURL)
+.then((response) => response.json())
+.then((jsObject) => {
+  //console.log(jsObject);
 
-    var day = "";
-    let count = 0;
-    for (let i = 0; i < jsObject.list.length; i++) {
-      if (jsObject.list[i].dt_txt.includes('18:00:00')) {
-        count++;
-    /*Temp*/
-        var temper = jsObject.list[i].main.temp.toFixed(0);
+  var day = "";
+  let count = 0;
+  for (let i = 0; i < jsObject.list.length; i++) {
+    if (jsObject.list[i].dt_txt.includes('18:00:00')) {
+      count++;
+  /*Temp*/
+      var temper = jsObject.list[i].main.temp.toFixed(0);
 
-        let myhigh = 'high' + count;
-        document.getElementById(myhigh).textContent = temper;
+      let myhigh = 'high' + count;
+      document.getElementById(myhigh).textContent = temper;
 
-        /*Day of Week*/
+      /*Day of Week*/
 
-        let myday = 'day' + count;
-        var d = new Date(jsObject.list[i].dt_txt);
-        var n = d.getDay();
-        if (n > 6){
-          (n = n-7);
-        }
-
-
-
-        if (n == 0) {
-          day = "Sun";
-        } else if (n == 1) {
-          day = "Mon";
-        } else if (n == 2) {
-          day = "Tues";
-        } else if (n == 3) {
-          day = "Wed";
-        } else if (n == 4) {
-          day = "Thurs";
-        } else if (n == 5) {
-          day = "Fri";
-        } else if (n == 6) {
-          day = "Sat";
-        }
-
-        document.getElementById(myday).textContent = day;
-
-        
-
+      let myday = 'day' + count;
+      var d = new Date(jsObject.list[i].dt_txt);
+      var n = d.getDay();
+      if (n > 6){
+        (n = n-7);
       }
 
-    }
-  });
 
+
+      if (n == 0) {
+        day = "Sun";
+      } else if (n == 1) {
+        day = "Mon";
+      } else if (n == 2) {
+        day = "Tues";
+      } else if (n == 3) {
+        day = "Wed";
+      } else if (n == 4) {
+        day = "Thurs";
+      } else if (n == 5) {
+        day = "Fri";
+      } else if (n == 6) {
+        day = "Sat";
+      }
+
+      document.getElementById(myday).textContent = day;
+
+      
+
+    }
+
+  }
+});
 
 
  // get city ID
@@ -79,17 +77,20 @@ const jsonURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&uni
 let cityID = "5604473";
 let townsIndex = 4;
 
-// get upcoming events
+ // get upcoming events
+ 
+ const eventsJSON = "https://byui-cit230.github.io/weather/data/towndata.json";
+ fetch(eventsJSON) .then((response) => response.json()) .then((eventsObject) => {
+     //console.log(eventsObject.towns[townsIndex]);
+     let eventsSection = document.createElement("section");
+     for (let i = 0; i < eventsObject.towns[townsIndex].events.length; i++) {
+         //console.log(eventsObject.towns[townsIndex].events[i]);
+         let newEvent = document.createElement("p");
+         newEvent.textContent = eventsObject.towns[townsIndex].events[i];
+         eventsSection.appendChild(newEvent);
+     }
+     document.getElementById("events").appendChild(eventsSection);
+ });
+ 
 
-const eventsJSON = "https://byui-cit230.github.io/weather/data/towndata.json";
-fetch(eventsJSON) .then((response) => response.json()) .then((eventsObject) => {
-    //console.log(eventsObject.towns[townsIndex]);
-    let eventsSection = document.createElement("section");
-    for (let i = 0; i < eventsObject.towns[townsIndex].events.length; i++) {
-        //console.log(eventsObject.towns[townsIndex].events[i]);
-        let newEvent = document.createElement("p");
-        newEvent.textContent = eventsObject.towns[townsIndex].events[i];
-        eventsSection.appendChild(newEvent);
-    }
-    document.getElementById("events").appendChild(eventsSection);
-});
+ 
