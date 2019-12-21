@@ -92,7 +92,7 @@ p {
 
 nav {
     background-color: #284b63;
-    font-family: 'Original Surfer', cursive;
+    font-family: 'Open Sans', cursive;
     color: #f9f8f8;
     text-align: center;
     box-shadow: 0 2px 15px #153243;
@@ -128,7 +128,7 @@ nav button {
 
 nav a:hover {
     background-color: #d0ccaf;
-    color: #3d321e;
+    color: #153243;
 }
 
 .navigation {
@@ -143,7 +143,7 @@ nav a:hover {
 
 .navigation a {
     background-color: transparent;
-    display: block;
+    display: inline-block;
     padding: 0.5rem 2%;
     text-decoration: none;
     color: #f9f8f8;
@@ -156,7 +156,8 @@ nav a:hover {
  }
 .navigation li a:hover {
     background-color: #d0ccca;
-    color: #3d321e;
+	color: #153243;
+	font-size: 125%;
 }
 
 .navigation li a:active {
@@ -165,7 +166,7 @@ nav a:hover {
 }
 
 .navigation li:first-child {
-    display: block;
+    display: inline-block;
 }
 
 .responsive li {
@@ -371,9 +372,9 @@ input:valid {
 .temples{
     display: grid;
     grid-gap: .25rem;
-    align-items: center;
+    align-items: top;
     text-align: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: auto;
 }
 
@@ -408,9 +409,9 @@ input:valid {
 .cards {
 	display: grid;
 	grid-gap: .5rem;
-	align-items: center;
+	align-items: top;
 	text-align: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: auto;
     width: 940px;
 }
@@ -507,4 +508,8 @@ img {
 .cards {
     grid-template-columns: 1fr 1fr;
  }
+
+ .navigation li:first-child {
+    display: block;
+}
 }}
