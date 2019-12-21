@@ -34,7 +34,16 @@ main,
 footer {
 	margin: 1rem auto;
 	padding: .5rem;
+
+}
+
+header, #restrict{
 	max-width: 800px;
+	margin: auto;
+}
+
+img.headerimage{
+	width: 100%;
 }
 
 .logo {
