@@ -38,7 +38,9 @@ input:focus {
 }
 fieldset {
 	background-color: #eee;
-    border: 1px solid #ccc;
+	border: 1px solid #ccc;
+	width: 60%;
+	margin: auto;
 }
 legend {
     font-family: 'Kaushan Script', 'script','Arial';
