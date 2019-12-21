@@ -9,7 +9,7 @@ fetch(requestURL)
 
 const temples = jsonObject["temples"];
 
-for (let i = 0; i < towns.length; i++ ) {
+for (let i = 0; i < temples.length; i++ ) {
 
     let card = document.createElement("div");
     let h2 = document.createElement("h2");
