@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CIT 230: Temple Inn & Suites Contact Page</title>
+<meta name="description" content="Temple Inn & Suites Contact Page CIT 230">
+<link rel="icon" sizes="16x16 24x24 32x32 48x48 64x64" href="images/favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Rouge+Script&display=swap" rel="stylesheet">
+<link href="css/templeinn.css" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet">
+
+</head>
+<body>
+    <header> 
+        <img class="logo" src="images/logo.png" alt="Temple Inn & Suites Logo">
+            <section class="headings">
+                <h1>Temple Inn & Suites</h1>
+            </section>
+    </header>
+    
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li ><a href="index.html">Home</a>
+                <li><a href="temples.html">Temples</a>
+                <li><a href="services.html">Services</a>
+                <li><a href="reservations.html">Reservations</a>
+                <li class="active"><a href="contact.html">Contact Us</a>
+              
+        </ul>
+        
+    </nav>
+<main>
+    <h3>Contact Us</h3><br>
+   
+    <form action="thankscontact.html" method="get">
+        <fieldset>
+        <legend><strong>Your Contact Information</strong></legend>
+        <label for="name">Full Name:</label><input type="text" id="name" name="name" required pattern='[A-Za-z ]{5,}' size="30"><br>
+        <label for="email">E-Mail:<input type="email" id="email" name="email" placeholder="user@email.org"></label><br>
+        <label>Phone: <input type="tel" name="phone" placeholder="###-###-####" required></label><br>
+        </fieldset>
+
+        <fieldset>
+            <label for="subject">Subject<em> (Choose one)</em></label><br>
+            <div class="radio">
+                <label for="radio1"><input type="radio" id="radio1" name="subject1" value="1" checked>Suggestion</label>
+            </div>
+            <div class="radio">
+                <label for="radio2"><input type="radio" id="radio2" name="subject2" value="2">Inquiry</label>
+            </div>
+            <div class="radio">
+                <label for="radio3"><input type="radio" id="radio3" name="subject3" value="3">Issue</label>
+            </div>
+            <div class="radio">
+                <label for="radio4"><input type="radio" id="radio4" name="subject4" value="4">Other</label>
+            </div>
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend><strong>Comment or Message</strong></legend>
+            
+            <textarea id="additional" name="additional" rows="7" cols="50"></textarea>
+        </fieldset>
+        <br>
+        <div class="buttons">
+            <input type="submit" value="Send Form">
+       </div>
+</form><hr>
+<br><br><br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701328!2d-77.09772048446371!3d38.983251779557435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1576654946823!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+
+
+</main>
+<footer>
+    <div class="row1"><p>&copy; <span id="currentdate"></span> Temple Inn & Suites | Bethesda, MD </p></div>
+    <div class="row2"><a href="resource.html">Taci Watterson-Balls Resource Page</a></div>
+</footer>
+
+<script src="js/responsive.js"></script>
+<script src="js/currentdate.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CIT 230: Temple Inn & Suites Reservations Page</title>
+<meta name="description" content="Temple Inn & Suites Reservations Page CIT 230">
+<link rel="icon" sizes="16x16 24x24 32x32 48x48 64x64" href="images/favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Rouge+Script&display=swap" rel="stylesheet">
+<link href="css/templeinn.css" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet">
+
+</head>
+<body>
+    <header> 
+        <img class="logo" src="images/logo.png" alt="Temple Inn & Suites Logo">
+            <section class="headings">
+                <h1>Temple Inn & Suites</h1>
+            </section>
+    </header>
+    
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li ><a href="index.html">Home</a>
+                <li><a href="temples.html">Temples</a>
+                <li><a href="services.html">Services</a>
+                <li class="active"><a href="reservations.html">Reservations</a>
+                <li><a href="contact.html">Contact Us</a>
+              
+        </ul>
+        
+    </nav>
+<main>
+    <div><blockquote>You're never lost when you can see the temple.</blockquote>
+        <p class="author">-Gary E. Stevenson</p></blockquote></div><br>
+        <img class="headerimage" src="images/come-often.jpg" alt="Salt Lake City, UT"><br><br>
+
+    <form action="thanks.html" method="get">
+        <fieldset>
+        <legend><strong>Contact Information</strong></legend>
+        <label for="name">Full Name:</label><input type="text" id="name" name="name" required pattern='[A-Za-z ]{5,}' size="30"><br>
+        <label for="email">E-Mail:<input type="email" id="email" name="email" placeholder="user@email.org"></label><br>
+        <label>Phone: <input type="tel" name="phone" placeholder="###-###-####" required></label><br>
+        <label>Address: <input type="text" name="address" size="40"><label><br>
+            <label for="zip">Zip Code:</label><input type="text" pattern=[0-9]{5} size="5" id="zip" name="zip" required><br>
+
+        <label for="guests">How Many Guests Will Be Staying?</label><select id="guests" name="guests">
+            <option value="Select Number of Guests" selected disabled>Select Number of Guest</option>
+            <option value="1">1</option>
+            <option value="2">2-Max Occupancy in Apartment</option>
+            <option value="3">3</option>
+            <option value="4">4-Max Occupancy in Single Room</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8-Max Occupancy in Family Suite</option>
+            </select><br>
+
+        <label for="checkin">What date will you check-in?</label><input type="date" name="checkin"><br>
+        <label for="checkout">What date will you check-out?</label><input type="date" name="checkout">
+        </fieldset>
+
+        <fieldset>    
+        <legend><strong>Room Information</strong></legend>
+        <label for="rooms">How Many Rooms Will You Need?</label><select id="rooms" name="rooms">
+                <option value="Select Number of Rooms" selected disabled>Select Number of Rooms</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5-Please call for Reservation if over 5 rooms are needed</option>
+            </select><br>
+
+        <label for="roomType">Select Your Room Style</label><select id="roomTtype" name="roomType">
+            <option value="Select Room Style" selected disabled>Select Room Style</option>
+            <option value="1">1-King Size Bed</option>
+            <option value="2">2-Queen Size Beds</option>
+            <option value="Family Suite">Family Suite</option>
+            <option value="Apartment">Apartment</option>
+            <option value="Event Space">Event Space</option>
+            <select><br>
+        </fieldset>   
+
+        <fieldset>    
+        <legend><strong>Temple Information</strong></legend>
+        <label for="temple">Temple You are Visiting</label><select id="temple" name="temple">
+            <option value="Select Temple" selected disabled>Select Temple</option>
+            <option value="Laie, Hawaii">Laie, Hawaii</option>
+            <option value="Logan, Utah">Logan, Utah</option>
+            <option value="St. George, Utah">St. George, Utah</option>
+            <option value="Rome, Italy">Rome, Italy</option>
+            </select><br>
+     
+    <label for="function">What is Your Visit For?<em> (Choose one)</em></label><br>
+        <div class="radio">
+            <label for="radio1"><input type="radio" id="radio1" name="function" value="a" checked> Attending the Temple</label>
+        </div>
+        <div class="radio">
+            <label for="radio2"><input type="radio" id="radio2" name="function" value="s"> Sightseeing/Visiting the Temple</label>
+        </div>
+        <div class="radio">
+            <label for="radio3"><input type="radio" id="radio3" name="function" value="e"> Attending an Event at the Temple or Inn</label>
+        </div>
+        <div class="radio">
+            <label for="radio4"><input type="radio" id="radio4" name="function" value="m"> Called to Serve as Missionaries</label>
+        </div>
+        <div class="radio">
+            <label for="radio5"><input type="radio" id="radio5" name="function" value="o"> Official Church Business</label>
+        </div>
+        </label>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Additional Information</strong></legend>
+            <label for="additional">Please give us any additional information we should know:</label><br>
+            <textarea id="additional" name="additional" rows="7" cols="50"></textarea>
+        </fieldset>
+        <br>
+        <div class="buttons">
+            <input type="submit" value="Reserve Your Room">
+       </div>
+</form>
+</main>
+<footer>
+    <div class="row1"><p>&copy; <span id="currentdate"></span> Temple Inn & Suites | Bethesda, MD </p></div>
+    <div class="row2"><a href="resource.html">Taci Watterson-Balls Resource Page</a></div>
+</footer>
+
+<script src="js/responsive.js"></script>
+<script src="js/currentdate.js"></script>
+
+</body>
+</html>
