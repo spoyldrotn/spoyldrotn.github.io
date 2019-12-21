@@ -104,7 +104,7 @@ nav ul {
     padding: 0;
     overflow: hidden;
     display: flex; 
-    flex-direction: column;
+    flex-direction: row;
     border-radius: 10px;
     text-align: center;
     justify-content: space-evenly;
